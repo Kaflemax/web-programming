@@ -1,0 +1,471 @@
+
+/* =================================
+   KAFLEMAX GAMING WEBSITE
+   BLACK & PURPLE GAMING THEME
+================================= */
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #08060d;
+    color: white;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    background: #100b19;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #8b2cff;
+    box-shadow: 0 3px 20px rgba(139, 44, 255, 0.25);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: white;
+    font-weight: 900;
+}
+
+.logo h2 span,
+.footer-logo h2 span {
+    color: #a855f7;
+}
+
+.logo p {
+    color: #b99bd8;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+/* NAVIGATION */
+
+nav a {
+    margin-left: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #dddddd;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c084fc;
+    text-shadow: 0 0 12px #a855f7;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(126, 34, 206, 0.25),
+            transparent 40%
+        ),
+        linear-gradient(120deg, #08060d, #190d29, #08060d);
+
+    border-bottom: 1px solid #54218c;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-tag {
+    color: #c084fc;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 75px;
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.hero h1 span {
+    color: #a855f7;
+    text-shadow: 0 0 25px rgba(168, 85, 247, 0.7);
+}
+
+.hero h3 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.hero-description {
+    color: #b9b0c5;
+    max-width: 550px;
+    margin: 15px 0 35px;
+    font-size: 16px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #7e22ce, #a855f7);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 1px solid #c084fc;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #c084fc;
+    color: black;
+    transform: translateY(-4px);
+    box-shadow: 0 0 30px #a855f7;
+}
+
+/* SECTION HEADINGS */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading p {
+    color: #a855f7;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    margin-top: 8px;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 span {
+    color: #a855f7;
+}
+
+/* FEATURED GAMES */
+
+.games-section {
+    padding: 85px 7%;
+    background: #0b0811;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.game-card {
+    background: #171020;
+    border: 1px solid #38204d;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.game-card:hover {
+    transform: translateY(-12px);
+    border-color: #a855f7;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.35);
+}
+
+.game-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s;
+}
+
+.game-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 18px;
+}
+
+.card-content h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    color: #a99bb8;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.card-content a {
+    color: #c084fc;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card-content a:hover {
+    color: white;
+}
+
+/* LATEST NEWS */
+
+.news-section {
+    padding: 85px 7%;
+    background: #100b19;
+    border-top: 1px solid #39204f;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.news-card {
+    background: #1a1124;
+    border: 1px solid #43235c;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+    border-color: #a855f7;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.25);
+}
+
+.news-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-category {
+    color: #c084fc;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.news-content h3 {
+    margin: 12px 0;
+    font-size: 19px;
+}
+
+.news-content p {
+    color: #b9afc5;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.news-content a {
+    color: #c084fc;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.news-content a:hover {
+    color: white;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+    padding: 90px 10%;
+    text-align: center;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(126, 34, 206, 0.2),
+            transparent 60%
+        ),
+        #08060d;
+}
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about-content > p:first-child {
+    color: #c084fc;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.about-content h2 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.about-content h2 span {
+    color: #a855f7;
+}
+
+.about-content > p:nth-of-type(2) {
+    color: #b9afc5;
+    margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #100b19;
+    text-align: center;
+    padding: 45px 20px 25px;
+    border-top: 2px solid #8b2cff;
+    box-shadow: 0 -5px 25px rgba(139, 44, 255, 0.15);
+}
+
+.footer-logo h2 {
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+.footer-logo p {
+    color: #b99bd8;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.footer-links {
+    margin: 25px 0;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    color: #c9bed4;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #c084fc;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #38204d;
+    margin: 20px 0;
+}
+
+.copyright {
+    color: #887b95;
+    font-size: 13px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+
+    .game-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero h3 {
+        font-size: 19px;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .game-container,
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+
+    .games-section,
+    .news-section {
+        padding: 60px 7%;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-links a {
+        margin: 0;
+    }
+}
