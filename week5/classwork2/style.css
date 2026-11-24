@@ -1,0 +1,416 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #08060d;
+    color: white;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* HEADER */
+
+.header {
+    background: #100b19;
+    padding: 20px 7%;
+    border-bottom: 2px solid #8b2cff;
+    box-shadow: 0 3px 20px rgba(139,44,255,0.25);
+}
+
+.logo h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.logo h2 span,
+.footer-logo h2 span {
+    color: #a855f7;
+}
+
+.logo p {
+    color: #b99bd8;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+/* MAIN GRID */
+
+.main-layout {
+    display: grid;
+
+    /* THREE COLUMNS */
+    grid-template-columns: 220px minmax(0, 1fr) 220px;
+
+    /* ROWS */
+    grid-template-rows: 1fr;
+
+    min-height: 100vh;
+    gap: 0;
+    align-items: stretch;
+}
+
+/* LEFT SIDEBAR */
+
+.left-sidebar {
+    background: #100b19;
+    padding: 30px 20px;
+    border-right: 1px solid #54218c;
+}
+
+.left-sidebar h3,
+.right-sidebar h3 {
+    color: #c084fc;
+    font-size: 15px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.left-sidebar nav,
+.right-sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.left-sidebar nav a,
+.right-sidebar nav a {
+    color: #c9bed4;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left-sidebar nav a:hover,
+.right-sidebar nav a:hover {
+    background: #32134d;
+    color: #c084fc;
+    padding-left: 18px;
+}
+
+/* MIDDLE CONTENT */
+
+.main-content {
+    min-width: 0;
+    background: #08060d;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(126,34,206,0.25),
+            transparent 40%
+        ),
+        linear-gradient(120deg,#08060d,#190d29,#08060d);
+
+    border-bottom: 1px solid #54218c;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-tag {
+    color: #c084fc;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5vw, 75px);
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+.hero h1 span {
+    color: #a855f7;
+    text-shadow: 0 0 25px rgba(168,85,247,0.7);
+}
+
+.hero h3 {
+    margin-top: 20px;
+}
+
+.hero-description {
+    color: #b9b0c5;
+    margin: 15px 0 35px;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg,#7e22ce,#a855f7);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #c084fc;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #c084fc;
+    color: black;
+    transform: translateY(-4px);
+}
+
+/* SECTION HEADINGS */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading p {
+    color: #a855f7;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    margin-top: 8px;
+}
+
+.section-heading h2 span {
+    color: #a855f7;
+}
+
+/* GAMES */
+
+.games-section,
+.news-section {
+    padding: 65px 5%;
+}
+
+.games-section {
+    background: #0b0811;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    background: #171020;
+    border: 1px solid #38204d;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    border-color: #a855f7;
+}
+
+.game-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content p {
+    color: #a99bb8;
+    font-size: 13px;
+}
+
+.card-content a {
+    color: #c084fc;
+    font-size: 13px;
+}
+
+/* NEWS */
+
+.news-section {
+    background: #100b19;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.news-card {
+    background: #1a1124;
+    border: 1px solid #43235c;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 18px;
+}
+
+.news-category {
+    color: #c084fc;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.news-content p {
+    color: #b9afc5;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.news-content a {
+    color: #c084fc;
+    font-size: 13px;
+}
+
+/* ABOUT */
+
+.about-section {
+    padding: 80px 8%;
+    text-align: center;
+    background: #130a20;
+}
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about-content h2 span {
+    color: #a855f7;
+}
+
+.about-content p {
+    color: #b9afc5;
+    margin: 15px 0;
+}
+
+/* RIGHT SIDEBAR */
+
+.right-sidebar {
+    background: #100b19;
+    padding: 30px 20px;
+    border-left: 1px solid #54218c;
+}
+
+.sidebar-info {
+    margin-top: 45px;
+    padding: 15px;
+    background: #1a1124;
+    border: 1px solid #43235c;
+    border-radius: 8px;
+}
+
+.sidebar-info h3 {
+    margin-bottom: 10px;
+}
+
+.sidebar-info p {
+    font-size: 13px;
+    color: #b9afc5;
+    margin-top: 8px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #100b19;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 2px solid #8b2cff;
+}
+
+.footer-logo h2 {
+    letter-spacing: 3px;
+}
+
+.footer-logo p {
+    color: #b99bd8;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.copyright {
+    color: #887b95;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .main-layout {
+        grid-template-columns: 170px minmax(0, 1fr);
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .main-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .left-sidebar {
+        border-right: none;
+        border-bottom: 1px solid #54218c;
+        padding: 15px;
+    }
+
+    .left-sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .left-sidebar nav a {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 50px 7%;
+    }
+
+    .game-container {
+        grid-template-columns: 1fr;
+    }
+
+    .games-section,
+    .news-section {
+        padding: 45px 6%;
+    }
+}

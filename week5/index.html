@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Gallery</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 23%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Tablet view */
+    @media (max-width: 768px) {
+      .gallery img {
+        width: 48%;
+      }
+    }
+
+    /* Mobile view */
+    @media (max-width: 480px) {
+      .gallery img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="gallery">
+    <img src="images/vinicius.jpg" alt="vinicius">
+    <img src="images/valverde.png" alt="valverde">
+    <img src="images/mbappe.jpeg" alt="mbappe">
+    <img src="images/rodrygo.jpg" alt="rodrygo">
+    <img src="images/courtois.jpg" alt="courtois">
+    <img src="images/ronaldo.jpg" alt="ronaldo">
+    <img src="images/benzema.avif" alt="benzema">
+    <img src="images/kroos.webp" alt="kroos">
+    <img src="images/image9.jpg" alt="Image 9">
+    <img src="images/" alt="Image 10">
+    <img src="https://picsum.photos/id/1043/400/300" alt="Image 11">
+    <img src="https://picsum.photos/id/1050/400/300" alt="Image 12">
+    <img src="https://picsum.photos/id/1060/400/300" alt="Image 13">
+    <img src="https://picsum.photos/id/1062/400/300" alt="Image 14">
+    <img src="https://picsum.photos/id/1067/400/300" alt="Image 15">
+    <img src="https://picsum.photos/id/1074/400/300" alt="Image 16">
+  </div>
+
+</body>
+</html>
